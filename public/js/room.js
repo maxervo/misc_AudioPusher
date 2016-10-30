@@ -548,6 +548,7 @@ playMusic = function() {
       };
       'use strict';
 
+      var roomCode = location.search.split('room/')[1]
       var Player = {
 
           buffer: null,
@@ -556,9 +557,9 @@ playMusic = function() {
 
           tracks: [
               {
-                  artist: "Kavinsky",
-                  song: "Odd Look ft. The Weeknd",
-                  url: "//katiebaca.com/tutorial/odd-look.mp3"
+                  artist: "Playing",
+                  song: "Music",
+                  url: "//amplifyr.org/upload/" + roomCode + ".mp3"
               }
           ],
 
